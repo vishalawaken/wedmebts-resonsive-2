@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: "Poppins";
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+h2{
+    font-weight: 600;
+}
+section{
+    width: 100%;
+}
+
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/wallpaperflare.com_wallpaper\ \(4\).jpg);
+    background-size: cover;
+    background-position: 0.2px -3px ;
+    padding-bottom: 50px;
+
+}
+
+
+/* Nav-Bar */
+
+.nav-bar{
+    display: flex;
+    background-color:rgb(0,0,0,0);
+
+}
+
+.hamburger{
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+.logo{
+   
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 180px;
+    width: 180px;
+    transition: all 0.5s ease-in-out ;
+}
+
+.logo img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.nav-bar .links{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+
+.nav-bar .links a{
+    color: rgb(252, 252, 252);
+    transition: all 0.4s ease-in-out;
+}
+
+.nav-bar .links a:hover{
+    border-bottom: 1px solid ;
+    color:rgb(231,43,117) ;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* BANNER */
+
+.banner-cards{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-1,.card-2,.card-3{
+    width: 300px;
+    height: 500px;
+    border: 1px solid white;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px;
+    
+}
+
+
+
+
+.card-1{
+    background-image: url(images/wedding-videography.jpg);
+    background-size: cover;
+    background-position:-190px ;
+    transition: all 0.4s ease-in-out;
+    background-color: black;
+    background-blend-mode: hard-light;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-inline: 10px;
+    
+}
+
+.card-1 h1{
+    color: white;
+   
+}
+
+.card-1:hover{
+    transform: scale(1.1);
+    background-color: rgb(0,0,0,0);
+}
+
+.card-2{
+    background-image: url(images/insta3.jpg);
+    background-size: cover;
+    transition: all 0.4s ease-in-out;
+    background-color: black;
+    background-blend-mode: hard-light;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.card-2:hover{
+    transform: scale(1.1);
+    background-color: rgb(0,0,0,0);
+}
+
+.card-3{
+    background-image: url(images/reels.jpg);
+    background-size: cover;
+    transition: all 0.4s ease-in-out;
+    background-color: black;
+    background-blend-mode: hard-light;
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.card-3:hover{
+    transform: scale(1.1);
+    background-color: rgb(0,0,0,0);
+}
+
+/* SERVICES */
+
+.our-services{
+    display: flex;
+    flex-direction: column;
+    
+    flex-wrap: wrap;
+    
+}
+
+.heading{
+    text-align: center;
+    padding-block: 30px;
+    color: rgb(83,105,66);
+}
+
+.services-cards{
+    display: flex;
+    
+    width: 100%;
+    padding-inline: 20px;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.services-cards .first-card{
+    height: 380px;
+    width: 300px;
+    background-color: cornsilk;
+    background-image:url(images/dollar-gill-T-PUQaJ8YEw-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.services-cards .second-card{
+    height: 380px;
+    width: 300px;
+    background-color: rgb(192, 162, 42);
+    background-image: url(images/fabio-alves-BpeTaQozgN4-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.services-cards .third-card{
+    height: 380px;
+    width: 300px;
+    background-color: rgb(128, 103, 15);
+    background-image: url(images/rupinder-singh-1hUurHT0F0k-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* Services Descritpion */
+
+
+.services-cards-desc{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 30px;
+    color: rgb(83,105,66);
+}
+
+.desc1,.desc2,.desc3{
+    width: 300px;
+    text-align: center;
+
+}
+
+.desc1{
+   
+    display: flex;
+    flex-direction: column;
+    padding-inline: 20px;
+}
+
+.desc1 h2{
+    line-height: 2rem;
+    margin-bottom: 13px;
+}
+
+.desc2{
+    
+    display: flex;
+    flex-direction: column;
+    padding-inline: 20px;
+}
+
+.desc2 h2{
+    line-height: 2rem;
+    margin-bottom: 13px;
+}
+
+.desc3{
+    
+    display: flex;
+    flex-direction: column;
+    padding-inline: 20px;
+}
+
+.desc3 h2{
+    line-height: 2rem;
+    margin-bottom: 13px;
+}
+
+/*QUOTE */
+
+.quote{
+    width: 100%;
+    background-color:rgb(238,238,238);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 200px;
+    padding-block: 50px;
+    color: rgb(83,105,66);
+    
+}
+
+.quote .icon{
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 20px;
+}
+
+.quote .quote-desc {
+    text-align: center;
+}
+
+.quote h2{
+    font-weight: 400;
+}
+
+.image-wrap{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-block: 20px;
+}
+
+.quote .image{
+    height: 100px;
+    width: 100px;
+    background-color: darkkhaki;
+    background-image: url(images/avatar_3.jpg);
+    background-size: cover;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+}
+/* ABOUT US */
+
+.about-us{
+    display: flex;
+    padding-block: 50px;
+    color: rgb(83,105,66);
+    background-color: bisque;
+    flex-wrap: wrap;
+    
+}
+
+
+.about-us-desc{
+    width: 50%;
+    
+    padding-inline: 100px;
+    padding-block: 40px;
+    
+}
+
+.about-us-desc h1{
+    line-height: 2.5rem;
+    margin-bottom: 50px;
+    margin-top: 5px;
+}
+
+.about-us .btn{
+    border: 1px solid black;
+    display: flex;
+    width: max-content;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.about-us-image{
+    width: 50%;
+    
+    position: relative;
+}
+
+
+.about-us-image img{
+    height: 300px;
+    width: 250px;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+}
+
+#img1{
+    transform: translate(-50%,-50%) rotate(-30deg);
+}
+
+#img2{
+    transform: translate(-50%,-50%) rotate(-20deg);
+}
+#img3{
+    transform: translate(-50%,-50%) rotate(-10deg);
+}
+#img4{
+    transform: translate(-50%,-50%) rotate(0deg);
+}
+
+
+.last-banner{
+    width: 100%;
+    background-image: url(images/image6.jpg);
+    height: 400px;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    color:rgb(83,105,66);
+}
+
+.lets{
+    border: 1px solid yellow;
+    width: max-content;
+    padding-block: 5px;
+    padding-inline: 10px;
+    color: rgb(83,105,66);
+    background-color: yellow;
+}
+
+.footbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footbar .links{
+    display: flex;
+    gap: 20px;
+}
+
+.footbar a{
+    color: black;
+}
+
+
+
+
+
+
